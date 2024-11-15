@@ -1,0 +1,13 @@
+
+In C++, a constructor is a special member function of a class that is automatically called when an object of that class is created. The primary purpose of a constructor is to initialize the object's members.
+
+Key Points About Constructors:
+A constructor has the same name as the class.
+It does not have a return type, not even void.
+It can be overloaded, i.e., you can have multiple constructors with different parameters.
+It can be default, parameterized, or copy constructors.
+
+Types of Constructors:
+Default Constructor: A constructor with no parameters.
+Parameterized Constructor: A constructor with parameters to initialize the object with specific values.
+Copy Constructor: A constructor that creates a copy of an existing object.
