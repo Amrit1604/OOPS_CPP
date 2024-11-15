@@ -1,3 +1,5 @@
+// THIS -> KEYWORD 
+
 #include <iostream>
 using namespace std;
 
@@ -8,10 +10,26 @@ public:
     int wickets;   
 
     // Parameterized constructor
-    cricketer(string Name, int Runs, int Wickets) {
-        name = Name;      
-        runs = Runs;        
-        wickets = Wickets;  
+
+        // Parameterized constructor
+    // cricketer(string name, int runs, int wickets) {              // IF DONE LIKE THIS IT'LL ONLY GIVE GARBAGE VALUE 
+    //     name = name;      
+    //     runs = runs;        
+    //     wickets = wickets;  
+    // }
+
+    // cricketer(string Name, int Runs, int Wickets) {                 // IF DONE LIKE THIS THEN IT'LL WORK PERFECTLY
+    //     name = Name;      
+    //     runs = Runs;        
+    //     wickets = Wickets;  
+    // }
+    
+
+// IF WANT TO MAKE VARIABLE NAMES = PUBLIC DECLARED NAMES
+    cricketer(string name , int runs , int wickets){
+        this->name = name;
+        this->runs = runs;
+        this->wickets = wickets;
     }
 };
 
